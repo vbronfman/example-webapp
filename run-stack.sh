@@ -1,6 +1,6 @@
 #!/bin/bash
-
-aws cloudformation $ACTION \
+STACK_NAM=production
+aws cloudformation deploy \
     --region us-east-1 \
     --stack-name $STACK_NAME \
     --template-body file://service.yaml \
