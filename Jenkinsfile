@@ -71,7 +71,7 @@ pipeline {
                 script {
                     productionImage.push("deploy")
                     sh """
-                       aws ec2 reboot-instances --region us-east-1 --instance-ids i-08b556f16671a6825
+                       aws ec2 reboot-instances --region us-east-1 --instance-ids i-077d7556229b0ce9a
                     """
                 }
             }
